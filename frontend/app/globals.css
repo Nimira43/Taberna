@@ -1,27 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Spartan:wght@100..900&family=Protest+Revolution&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --dark: #111;
+  --light: #fafafa;
+  --grey-xl: #eee;
+  --grey-lg: #ccc;
+  --grey-md: #888;
+  --grey-dk: #333;
+  --orange: #ff4500;
+  --oran-lg: #ff8c00;
+  --oran-dk: #fbb127;
+  --sky-lg: #87ceeb;
+  --sky-dk: #38b5e7;
+  --teal: #008080;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.main-font {
+  font-family: 'League Spartan', sans-serif;
 }
+
+.logo {
+  font-family: 'Protest Revolution', cursive;
+}
+
+.title {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
