@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { AppRouterCacheProvider} from '@mui/material-nextjs/v13-appRouter'
 import { Poppins } from 'next/font/google'
 import './globals.css'
+import { ThemeProvider } from '@mui/material'
+import darkTheme from './dark.theme'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -22,7 +24,9 @@ export default function RootLayout({
     <html lang='en'>
       <body className={poppins.className}>
         <AppRouterCacheProvider>
-        {children}
+          <ThemeProvider theme={darkTheme}>
+            {children}
+          </ThemeProvider>        
         </AppRouterCacheProvider>
       </body>
     </html>
