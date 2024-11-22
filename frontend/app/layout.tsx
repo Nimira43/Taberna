@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { AppRouterCacheProvider} from '@mui/material-nextjs/v13-appRouter'
 import { Poppins } from 'next/font/google'
 import './globals.css'
 
@@ -20,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={poppins.className}>
+        <AppRouterCacheProvider>
         {children}
+        </AppRouterCacheProvider>
       </body>
     </html>
   )
