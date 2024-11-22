@@ -9,7 +9,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'eMart',
-  description: 'Online shop using Next JS, Nest JS and Prisma',
+  description: 'Online shop using Next JS, Material UI, Nest JS and Prisma',
 }
 
 export default function RootLayout({
