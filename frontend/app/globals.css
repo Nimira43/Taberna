@@ -35,6 +35,7 @@ body {
 
 .logo {
   font-family: 'Protest Revolution', cursive;
+  color: var(--orange);
 }
 
 .title {
