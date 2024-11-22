@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { AppRouterCacheProvider} from '@mui/material-nextjs/v13-appRouter'
 import { Poppins } from 'next/font/google'
 import './globals.css'
-import { ThemeProvider } from '@mui/material'
+import { Container, CssBaseline, ThemeProvider } from '@mui/material'
 import darkTheme from './dark.theme'
 
 const poppins = Poppins({
@@ -25,7 +25,10 @@ export default function RootLayout({
       <body className={poppins.className}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={darkTheme}>
-            {children}
+            <CssBaseline />
+            <Container>
+              {children}
+            </Container>
           </ThemeProvider>        
         </AppRouterCacheProvider>
       </body>
