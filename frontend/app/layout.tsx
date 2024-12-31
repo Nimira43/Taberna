@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 import { AppRouterCacheProvider} from '@mui/material-nextjs/v13-appRouter'
-import { Poppins } from 'next/font/google'
 import './globals.css'
 import { Container, CssBaseline, ThemeProvider } from '@mui/material'
 import darkTheme from './dark.theme'
+import { Poppins } from 'next/font/google'
 
 const poppins = Poppins({
   subsets: ['latin'],
