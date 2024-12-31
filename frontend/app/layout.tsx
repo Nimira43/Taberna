@@ -11,7 +11,7 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'eMart',
+  title: 'Kraou',
   description: 'Online shop using Next JS, Material UI, Nest JS and Prisma',
 }
 
