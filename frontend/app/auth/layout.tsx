@@ -7,8 +7,8 @@ export default function AuthLayout({
 }) {
   return (
     <div>
-      <Box >
-        <h1>AuthLayout</h1>
+      <Box className='h-screen flex items-center justify-center'>
+        {children}
       </Box>
     </div>
   )
