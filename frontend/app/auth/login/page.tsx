@@ -1,7 +1,6 @@
 import { Button, Link, Stack, TextField } from '@mui/material'
 import NextLink from 'next/link'
 
-
 export default function Login() {
   return (
     <Stack 
@@ -18,12 +17,18 @@ export default function Login() {
         variant='outlined'
         type='password'
       />
-      <Button variant='contained'>Login</Button>
-      <Link component={NextLink} href='/auth/signup'>
+      <Button 
+        variant='contained'
+      >
+        Login
+      </Button>
+      <Link 
+        component={NextLink} 
+        href='/auth/signup'
+        className='self-center'
+      >
         Signup
       </Link>
-
-
     </Stack>
   )
 }
