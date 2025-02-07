@@ -4,6 +4,5 @@ import { CreateUserRequest } from './dto/create-user.request'
 @Injectable()
 export class UsersService {
   createUser(data: CreateUserRequest) {
-    console.log(data)
   }
 }
