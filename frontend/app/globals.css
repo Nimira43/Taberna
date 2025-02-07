@@ -4,20 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --primary: #ff4500;
-  --secondary: #008080;
-  --dark: #111;
-  --light: #fffaf0;
-  --grey-xl: #eee;
-  --grey-lg: #ccc;
-  --grey-md: #888;
-  --grey-dk: #333;
-  --sky-lg: #87ceeb;
-  --sky-dk: #38b5e7;
-  --teal: #008080;
-}
-
 * {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
